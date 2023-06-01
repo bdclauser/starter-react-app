@@ -1,7 +1,7 @@
-from flask import FLASK, jsonify
+from flask import Flask, jsonify
 import aws_controller
 
-app = FLASK(__name__)
+app = Flask(__name__)
 
 
 @app.route("/")
