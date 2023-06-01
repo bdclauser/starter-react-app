@@ -28,8 +28,8 @@
             "AttributeType": "S"
         }
     ],
-    "ProfisionedThroughput": {
+    "ProvisionedThroughput": {
         "ReadCapacityUnits": 5,
-        "WriteCapacityUnites": 5
+        "WriteCapacityUnits": 5
     }
 }
