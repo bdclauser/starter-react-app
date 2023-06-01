@@ -1,15 +1,35 @@
 {
-    "TableName": "TestTable",
+    "TableName": "time_off_requests",
     "KeySchema": [
-        { "AttributeName": "Artist", "KeyType": "HASH" },
-        { "AttributeName": "SongTitle", "KeyType": "RANGE"}
+        {
+            "AttributeName": "id",
+            "KeyType": "HASH"
+        }
     ],
     "AttributeDefinitions": [
-        { "AttributeName": "Artist", "AttributeType": "S" },
-        { "AttributeName": "SongTitle", "AttributeType": "S" }
+        {
+            "AttributeName": "id",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "employee_name",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "start_date",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "end_date",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "status",
+            "AttributeType": "S"
+        }
     ],
-    "ProvisionedThroughput": {
+    "ProfisionedThroughput": {
         "ReadCapacityUnits": 5,
-        "WriteCapacityUnits": 5
+        "WriteCapacityUnites": 5
     }
 }

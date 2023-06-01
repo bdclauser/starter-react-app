@@ -1,42 +1,26 @@
 {
-    "TestTable": [
-        {
-            "PutRequest": {
-                "Item":
-                {
-                    "Artist": {
-                        "S": "Bowie"
-                    },
-                    "SongTitle": {
-                        "S": "Life on Mars"
-                    }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item":
-                {
-                    "Artist": {
-                        "S": "Rolling Stones"
-                    },
-                    "SongTitle": {
-                        "S": "Paint it Black"
-                    }
-                }
-            }
-        },
-        {
-            "PutRequest": {
-                "Item": {
-                    "Artist": {
-                        "S": "The Doors"
-                    },
-                    "SongTitle": {
-                        "S": "Light My Fire"
-                    }
-                }
-            }
-        }
+    "time_off_requests": [
+      {
+        "id": "1",
+        "employee_name": "John Doe",
+        "start_date": "2023-06-10",
+        "end_date": "2023-06-12",
+        "status": "pending"
+      },
+      {
+        "id": "2",
+        "employee_name": "Jane Smith",
+        "start_date": "2023-06-15",
+        "end_date": "2023-06-18",
+        "status": "approved"
+      },
+      {
+        "id": "3",
+        "employee_name": "Mark Johnson",
+        "start_date": "2023-06-20",
+        "end_date": "2023-06-23",
+        "status": "rejected"
+      }
     ]
-}
+  }
+  
