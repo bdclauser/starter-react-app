@@ -1,35 +1,40 @@
 {
     "TableName": "time_off_requests",
     "KeySchema": [
-        {
-            "AttributeName": "id",
-            "KeyType": "HASH"
-        }
+      {
+        "AttributeName": "id",
+        "KeyType": "HASH"
+      },
+      {
+        "AttributeName": "employee_name",
+        "KeyType": "RANGE"
+      }
     ],
     "AttributeDefinitions": [
-        {
-            "AttributeName": "id",
-            "AttributeType": "S"
-        },
-        {
-            "AttributeName": "employee_name",
-            "AttributeType": "S"
-        },
-        {
-            "AttributeName": "start_date",
-            "AttributeType": "S"
-        },
-        {
-            "AttributeName": "end_date",
-            "AttributeType": "S"
-        },
-        {
-            "AttributeName": "status",
-            "AttributeType": "S"
-        }
+      {
+        "AttributeName": "id",
+        "AttributeType": "S"
+      },
+      {
+        "AttributeName": "employee_name",
+        "AttributeType": "S"
+      },
+      {
+        "AttributeName": "start_date",
+        "AttributeType": "S"
+      },
+      {
+        "AttributeName": "end_date",
+        "AttributeType": "S"
+      },
+      {
+        "AttributeName": "status",
+        "AttributeType": "S"
+      }
     ],
     "ProvisionedThroughput": {
-        "ReadCapacityUnits": 5,
-        "WriteCapacityUnits": 5
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
     }
-}
+  }
+  
