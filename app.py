@@ -1,7 +1,6 @@
 from flask import FLASK, jsonify
 import aws_controller
 
-
 app = FLASK(__name__)
 
 
