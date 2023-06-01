@@ -4,4 +4,4 @@ dynamo_client = boto3.client("dynamodb")
 
 
 def get_items():
-    return dynamo_client.scan(TableName="TestTable")
+    return dynamo_client.scan(TableName="time_off_requests")
