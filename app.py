@@ -1,4 +1,6 @@
-from flask import FLASK
+from flask import FLASK, jsonify
+import aws_controller
+
 
 app = FLASK(__name__)
 
@@ -10,7 +12,7 @@ def index():
 
 @app.route("/get-items")
 def get_items():
-    return "TODO: Implement Functionality"
+    return jsonify(aws_controller.get_items())
 
 
 if __name__ == "__main__":
