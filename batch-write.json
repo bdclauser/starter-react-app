@@ -1,26 +1,67 @@
 {
-    "time_off_requests": [
-      {
-        "id": "1",
-        "employee_name": "John Doe",
-        "start_date": "2023-06-10",
-        "end_date": "2023-06-12",
-        "status": "pending"
-      },
-      {
-        "id": "2",
-        "employee_name": "Jane Smith",
-        "start_date": "2023-06-15",
-        "end_date": "2023-06-18",
-        "status": "approved"
-      },
-      {
-        "id": "3",
-        "employee_name": "Mark Johnson",
-        "start_date": "2023-06-20",
-        "end_date": "2023-06-23",
-        "status": "rejected"
+  "TimeOffTable": [
+    {
+      "PutRequest": {
+        "Item": {
+          "id": {
+            "S": "1"
+          },
+          "employee_name": {
+            "S": "John Doe"
+          },
+          "start_date": {
+            "S": "2023-06-10"
+          },
+          "end_date": {
+            "S": "2023-06-12"
+          },
+          "status": {
+            "S": "pending"
+          }
+        }
       }
-    ]
-  }
-  
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": {
+            "S": "2"
+          },
+          "employee_name": {
+            "S": "Jane Smith"
+          },
+          "start_date": {
+            "S": "2023-06-15"
+          },
+          "end_date": {
+            "S": "2023-06-18"
+          },
+          "status": {
+            "S": "approved"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "id": {
+            "S": "3"
+          },
+          "employee_name": {
+            "S": "Mark Johnson"
+          },
+          "start_date": {
+            "S": "2023-06-20"
+          },
+          "end_date": {
+            "S": "2023-06-23"
+          },
+          "status": {
+            "S": "rejected"
+          }
+        }
+      }
+    }
+  ]
+}
